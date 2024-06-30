@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.tabletestview.TableTestViewController">
+   <children>
+      <TableView fx:id="tableView" layoutX="43.0" layoutY="109.0" prefHeight="224.0" prefWidth="500.0">
+        <columns>
+          <TableColumn fx:id="nameTableView" prefWidth="82.0" text="Name" />
+          <TableColumn fx:id="idTableView" prefWidth="87.0" text="ID" />
+            <TableColumn fx:id="universityTableView" prefWidth="131.0" text="University" />
+            <TableColumn fx:id="cgpaTableView" minWidth="0.0" prefWidth="75.0" text="Cgpa" />
+            <TableColumn fx:id="ageTableView" minWidth="0.0" prefWidth="43.0" text="Age" />
+            <TableColumn fx:id="nationalityTableView" minWidth="5.0" prefWidth="81.0" text="Nationality" />
+        </columns>
+      </TableView>
+      <Button layoutX="238.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#addTextToTableButtonOnClicked" prefHeight="25.0" prefWidth="124.0" text="Add Text to Table" />
+   </children>
+</AnchorPane>
